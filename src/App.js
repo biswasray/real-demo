@@ -6,12 +6,13 @@ import About from './screens/About'
 export default function App() {
   return (
     <div>
-      <BrowserRouter basename={"/real-demo"}>
+      {process.env.PUBLIC_URL}
+      {/* <BrowserRouter basename={"/real-demo"}>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter> */}
     </div>
   )
 }
