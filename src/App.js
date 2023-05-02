@@ -7,12 +7,12 @@ export default function App() {
   return (
     <div>
       {process.env.PUBLIC_URL}
-      {/* <BrowserRouter basename={"/real-demo"}>
+      <BrowserRouter basename={"/real-demo"}>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
     </Routes>
-  </BrowserRouter> */}
+  </BrowserRouter>
     </div>
   )
 }
