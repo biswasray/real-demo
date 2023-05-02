@@ -6,10 +6,10 @@ import About from './screens/About'
 export default function App() {
   return (
     <div>
-      <BrowserRouter basename={process.env.REACT_APP_ROUTER_BASE || ''}>
+      <BrowserRouter basename={"/real-demo"}>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="about" element={<About />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   </BrowserRouter>
     </div>
