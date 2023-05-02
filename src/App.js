@@ -7,7 +7,9 @@ export default function App() {
   return (
     <div>
       {process.env.PUBLIC_URL}
-      <BrowserRouter basename={"/real-demo"}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Link to={"/"}>Home</Link>
+        <Link to={"/about"}>About</Link>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
